@@ -1,5 +1,7 @@
 # Little Learners Hub
 
+Repository: `littlelearnershub32`
+
 A lightweight, responsive static website for Little Learners Hub. It uses plain HTML, CSS and JavaScript, so it can be hosted on an inexpensive static host without a framework or build step.
 
 ## Preview
