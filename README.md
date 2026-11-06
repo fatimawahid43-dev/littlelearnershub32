@@ -8,6 +8,10 @@ A lightweight, responsive static website for Little Learners Hub. It uses plain 
 
 Open `index.html` in a browser. The page also works when served from any static web host.
 
+## Deployment
+
+The `.github/workflows/deploy.yml` workflow publishes the site to GitHub Pages on pushes to `main`. In the repository settings, set **Pages → Build and deployment → Source** to **GitHub Actions**. The published site URL is `https://fatimawahid43-dev.github.io/littlelearnershub32/` once Pages is enabled and the workflow succeeds.
+
 ## Before publishing
 
 Update these sample contact details with the business's real information:
