@@ -69,3 +69,10 @@ Use simple, friendly shapes with rounded corners and light shadows: learning car
 - `README.md` contains basic preview and update instructions.
 - Replace the sample WhatsApp number and placeholder email before launch. Product prices and catalogue details also need confirmation.
 - Checkout, payments, customer accounts, stored contact submissions, and downloadable product files are not implemented yet; current product buttons are enquiry links.
+
+## Kid-friendly visuals
+
+- Keep the established section order, card layout, responsive breakpoints, and motion while refreshing the look.
+- Use child-friendly infographics, simple illustrated cues, and clear real tables for grown-up activity tips.
+- Keep data readable and activity suggestions short, warm, and pressure-free. Use saturated pastel accents with deep text for contrast.
+- Do not add animation to infographic or table elements.
