@@ -2,77 +2,59 @@
 
 ## Brand
 
-- **Audience:** Parents and caregivers of children aged 2–6.
-- **Promise:** Simple, joyful learning activities families can use at home.
+- **Audience:** Children aged 2–6 and their parents/caregivers.
+- **Promise:** A joyful, free place for families to learn and play together at home.
 - **Tagline:** “Learn, Explore & Grow Through Play!”
 - **Voice:** Warm, encouraging, clear, and parent-friendly. Celebrate curiosity and small steps; avoid pressure or claims that every child develops at the same pace.
 
 ## Visual direction
 
-Create a welcoming editorial playroom: soft pastel colour, confident navy text, cheerful geometric illustrations, and generous breathing room. Keep the experience polished enough for parent trust while retaining small playful details.
-
-**Preservation constraint:** Visual refinements must be styling-only. Keep the existing page structure, section order, content, layout geometry, responsive breakpoints, interactions, and animation behaviour unchanged. Do not introduce new motion.
+Create a colourful, friendly playroom with confident navy text, cheerful cartoon-style illustrations, rounded cards, playful number patterns, and generous breathing room. Keep the experience easy for young children to understand and reassuring for parents.
 
 ### Colour palette
 
 | Role | Colour | Hex |
 | --- | --- | --- |
-| Main background | Warm paper | `#FFFAF4` |
-| Main text | Deep blue-grey | `#29334A` |
-| Primary action | Bright coral | `#C9544A` |
-| Pink accent | Playful pink | `#F3B4BE` |
-| Blue accent | Clear sky blue | `#9ED3E5` |
-| Yellow accent | Sunshine | `#F4CF5C` |
-| Green accent | Fresh mint | `#A9D6B7` |
-| Lavender accent | Lilac | `#C7B4E6` |
+| Main background | Warm paper | `#FFF9EE` |
+| Main text | Deep blue-grey | `#253451` |
+| Primary action | Bright coral | `#E85C55` |
+| Pink accent | Playful pink | `#F4A5B3` |
+| Blue accent | Clear sky blue | `#86CFE1` |
+| Yellow accent | Sunshine | `#F6CF4D` |
+| Green accent | Fresh mint | `#9BD5AA` |
+| Lavender accent | Lilac | `#C3A9EC` |
 
-Use navy for readable body text and primary navigation. Use the more saturated pastel colours for illustrations, cards, tags, and section backgrounds, with warm paper as the main canvas. Keep text contrast clear against every coloured surface.
+Use readable deep text against pastel surfaces. Use bright accents in illustrations, game controls, number cells, and playful badges.
 
-### Typography
+## Typography and illustration
 
-- **Fraunces:** Display headings and short expressive phrases.
-- **DM Sans:** Body copy, navigation, labels, and controls.
-- **Nunito:** The compact wordmark and selected child-friendly labels.
+- Use Nunito for child-friendly labels and headings, with DM Sans for readable body copy; retain graceful system fallbacks.
+- Use simple original cartoon art, playful shapes, and friendly faces. Prefer vector, CSS, and canvas drawings that stay crisp on phones.
+- Do not use stock imagery or rely on emoji alone to communicate an important instruction.
+- Use large, comfortable touch targets and short labels.
 
-The typefaces currently load from Google Fonts, with local system fallbacks in the CSS.
+## Page structure and features
 
-### Illustration style
+1. Home and welcome
+2. Searchable learning resources
+3. Free play lab with count, letter, and shape games
+4. Child-friendly drawing canvas with cartoon stamps and PNG download
+5. Tap-to-hear number chart from 1–100
+6. Curated learning videos with parent preview guidance
+7. About, free printable, parent tips, collaborations, and contact
 
-Use simple, friendly shapes with rounded corners and light shadows: learning cards, blocks, rainbows, printable activity pages, and small decorative marks. Prefer vector or CSS artwork that stays crisp on mobile. Avoid relying on emoji as the only meaning-bearing icon.
+The site is a free resource. Do not add paid product listings, prices, checkout, or account requirements.
 
-## Page structure
+## Interaction and accessibility
 
-1. **Home:** Welcome, play-based learning promise, age range, and direct links to resources and the shop.
-2. **Learning resources:** Searchable cards for phonics, numbers, shapes, Montessori activities, worksheets, fine motor practice, creative arts, and screen-free play.
-3. **About:** Play-based philosophy, early learning, creativity, and child-led independence.
-4. **Shop:** Printable activity products with descriptions, illustrative cover art, PKR prices, and WhatsApp enquiry actions.
-5. **Free resources:** A no-sign-up ABC activity download.
-6. **Parent’s corner:** Short practical articles with expandable reading text.
-7. **Work with us:** Brand, UGC, PR, and educational partnership enquiries.
-8. **Contact:** Instagram, WhatsApp, email, and a form that prepares an email for the visitor to send.
+- Keep the navigation responsive and the hero WebGL background intact.
+- Keep learning cards searchable and filterable.
+- Generate the ABC printable and drawing download in the browser.
+- Make number cells speak their number when supported; do not require audio for using the chart.
+- Keep keyboard focus visible, use semantic controls and form labels, and respect reduced-motion preferences.
+- Keep videos click-to-load and include a reminder for grown-ups to preview and watch with children.
+- Keep the contact form transparent: it prepares an email, and does not store submissions.
 
-## Interaction and responsive behaviour
+## Implementation
 
-- Keep the top navigation visible on larger screens; use a toggleable menu on small screens.
-- Let families filter resources by learning type and search titles or descriptions.
-- Make product enquiry buttons open a prefilled WhatsApp message.
-- Generate the free printable in the browser as a downloadable SVG.
-- Use semantic HTML, visible keyboard focus, descriptive form labels, and a reduced-motion preference.
-- Stack content into a single-column flow on phone screens; keep touch targets comfortably sized.
-
-## Implementation notes
-
-- The site is a static HTML/CSS/JavaScript project with no build step or server requirement.
-- `index.html` contains page content and SEO description metadata.
-- `styles.css` contains the visual system and responsive layouts.
-- `app.js` contains resource and product catalogues plus search, filtering, downloads, and enquiry interactions.
-- `README.md` contains basic preview and update instructions.
-- Replace the sample WhatsApp number and placeholder email before launch. Product prices and catalogue details also need confirmation.
-- Checkout, payments, customer accounts, stored contact submissions, and downloadable product files are not implemented yet; current product buttons are enquiry links.
-
-## Kid-friendly visuals
-
-- Keep the established section order, card layout, responsive breakpoints, and motion while refreshing the look.
-- Use child-friendly infographics, simple illustrated cues, and clear real tables for grown-up activity tips.
-- Keep data readable and activity suggestions short, warm, and pressure-free. Use saturated pastel accents with deep text for contrast.
-- Do not add animation to infographic or table elements.
+This is a static HTML/CSS/JavaScript project with no build step. `index.html` contains structure and SEO metadata, `styles.css` contains responsive styling, `app.js` contains interactions and `videos.js` contains the video catalogue. GitHub Pages deploys from the `main` branch.

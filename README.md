@@ -1,30 +1,31 @@
 # Little Learners Hub
 
-Repository: `littlelearnershub32`
-
-A lightweight, responsive static website for Little Learners Hub. It uses plain HTML, CSS and JavaScript, so it can be hosted on an inexpensive static host without a framework or build step.
+A free, responsive play-and-learn website for children aged 2–6 and their grown-ups. Built with plain HTML, CSS and JavaScript, with no framework, account, payment, or build step.
 
 ## Preview
 
-Open `index.html` in a browser. The page also works when served from any static web host.
+Open `index.html` in a browser or serve the folder with any static web host.
+
+## What’s inside
+
+- Searchable, filterable learning resource cards
+- A free browser-based ABC printable
+- Curated YouTube learning videos with tap-to-load playback
+- Three little games: counting, letter finding, and shape matching
+- A tap-to-hear number chart from 1 to 100
+- A drawing canvas with original cat, bunny, and smiling sun stamps; save drawings as PNG
+- Parent tips, contact form, Instagram and WhatsApp links
+
+No products or paid features are offered on this website. The contact form opens the visitor’s email app and does not store submissions. Replace the sample WhatsApp number and email address with the brand’s real contact details before publishing business contact information.
 
 ## Deployment
 
-The `.github/workflows/deploy.yml` workflow publishes the site to GitHub Pages on pushes to `main`. In the repository settings, set **Pages → Build and deployment → Source** to **GitHub Actions**. The published site URL is `https://fatimawahid43-dev.github.io/littlelearnershub32/` once Pages is enabled and the workflow succeeds.
-
-## Before publishing
-
-Update these sample contact details with the business's real information:
-
-- In `app.js`, change `whatsappNumber` to the WhatsApp number in international format, digits only (for example, `923001234567`).
-- In `index.html`, replace `hello@littlelearnershub.com` in both the email link and contact form context with the business email.
-- Confirm the product names, descriptions and PKR prices in the `products` list in `app.js`.
-- Replace the sample WhatsApp enquiry flow with a payment and order system when online checkout is ready. The current buttons open WhatsApp; they do not take payment or create orders.
-
-The contact form prepares a message in the visitor's email app. It does not submit or store personal information on a server. The free ABC activity is generated in the browser as an SVG download. Product artwork is illustrative catalogue art, not a photo of a physical product.
+The `.github/workflows/deploy.yml` workflow publishes to GitHub Pages on pushes to `main`. Repository Pages should use **GitHub Actions**. Site URL: `https://fatimawahid43-dev.github.io/littlelearnershub32/`.
 
 ## Files
 
-- `index.html` — page content and search metadata
-- `styles.css` — pastel visual design and responsive layouts
-- `app.js` — resource catalogue, product catalogue, download, menu and contact interactions
+- `index.html` — page content and SEO metadata
+- `styles.css` — responsive playroom styling
+- `app.js` — resources, games, number chart, drawing studio, and contact interactions
+- `videos.js` — curated YouTube video catalogue
+- `assets/` — local artwork and media

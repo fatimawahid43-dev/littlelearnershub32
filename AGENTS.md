@@ -1,17 +1,22 @@
 # Project guidance
 
-## Landing page assets
+## Site direction
 
-- Keep the landing page's existing section order, layout geometry, responsive behavior, and motion unchanged when updating visuals.
-- The `/assets` directory is the canonical home for project image assets. Reference site artwork with relative paths such as `assets/resource-phonics.png` so it works on static hosting.
-- Use original, brand-matched illustrations for landing page artwork. Do not add stock imagery. Keep the hero illustration as currently implemented unless explicitly asked to change it.
-- Use the soft pastel palette and gentle, simple illustration style described in [design.md](design.md).
-- Give informative images concise alt text. Mark purely decorative artwork as decorative (`alt=""` or `aria-hidden="true"`).
-- Use descriptive, lowercase, hyphenated filenames. Optimize image dimensions and file size for the rendered card size.
+- Little Learners Hub is a free play-and-learn space for ages 2–6 and their grown-ups. Do not add prices, checkout, paid products, or account requirements.
+- Keep content encouraging and age appropriate. Use simple language, friendly cartoons, large touch targets, and clear parent guidance.
+- Maintain responsive behaviour and the hero WebGL background unless a future request asks to change them.
+- Use the saturated pastel palette and child-friendly visual direction described in [design.md](design.md).
+
+## Artwork
+
+- `/assets` is the canonical home for image assets. Use relative paths such as `assets/resource-phonics.png` so artwork works on static hosting.
+- Prefer original vector or CSS illustrations and original cartoon artwork. Do not add stock imagery.
+- Keep informative alt text concise and mark decorative artwork with `alt=""` or `aria-hidden="true"`.
 
 ## Site files
 
 - `index.html` contains the page structure.
-- `styles.css` contains visual styling and responsive behavior.
-- `app.js` contains the searchable resource and product catalogues and their interactions.
+- `styles.css` contains styling and responsive behaviour.
+- `app.js` contains searchable resources, games, number chart, drawing studio, free activity, and contact interactions.
+- `videos.js` contains the YouTube video catalogue.
 - `assets/` contains local illustrations and other page media.
