@@ -20,3 +20,7 @@
 - `app.js` contains searchable resources, games, number chart, drawing studio, free activity, and contact interactions.
 - `videos.js` contains the YouTube video catalogue.
 - `assets/` contains local illustrations and other page media.
+
+## Activity page files
+
+The homepage links to four dedicated static pages: `games.html` (10 mini games), `drawing.html` (10 cartoon prompts), `numbers.html` (10 number activities plus a 1–100 chart), and `times-tables.html` (tables 1–10). Each page uses its own JavaScript file; `site.js` provides shared navigation behavior.

@@ -29,3 +29,11 @@ The `.github/workflows/deploy.yml` workflow publishes to GitHub Pages on pushes 
 - `app.js` — resources, games, number chart, drawing studio, and contact interactions
 - `videos.js` — curated YouTube video catalogue
 - `assets/` — local artwork and media
+
+## Activity pages
+
+- `games.html` and `games.js` — 10 playable mini games
+- `drawing.html` and `drawing.js` — 10 original cartoon drawing prompts
+- `numbers.html` and `numbers.js` — interactive 1–100 chart and 10 number activities
+- `times-tables.html` and `tables.js` — times tables 1–10
+- `site.js` — shared navigation and footer helpers

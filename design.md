@@ -58,3 +58,7 @@ The site is a free resource. Do not add paid product listings, prices, checkout,
 ## Implementation
 
 This is a static HTML/CSS/JavaScript project with no build step. `index.html` contains structure and SEO metadata, `styles.css` contains responsive styling, `app.js` contains interactions and `videos.js` contains the video catalogue. GitHub Pages deploys from the `main` branch.
+
+## Multi-page activity rooms
+
+The home page links to separate Games, Drawing, Numbers, and Times Tables pages. Provide at least ten choices or activities on each: ten mini-games, ten cartoon drawing prompts, ten interactive number activities plus a 1–100 chart, and ten times tables. Keep the pages free, responsive, and operable by mouse, touch, and keyboard.
